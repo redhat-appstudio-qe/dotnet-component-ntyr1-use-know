@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-d8cs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/rsoaresd_org/spi-demos-kora-tenant/dotnet-component/devfile-sample-dotnet60-basic-d8cs@sha256:9b7f60c9293f9d1472bf42aeb8d1c2abac945cf654ae43068d062a9febdf59eb
+        name: main
+        resources: {}
+status: {}
